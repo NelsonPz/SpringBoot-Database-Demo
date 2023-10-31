@@ -11,7 +11,4 @@ public interface EmployeeRepo extends CrudRepository<Employee,Integer>{
 
     public List<Employee> findAll();
     
-
-
-
 }
