@@ -6,6 +6,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -20,9 +22,14 @@ public class Employee {
     String userId;
     String firstName;
     String lastName;
-    String department;
     String password;
-    public Employee(String userId, String firstName, String lastName, String department) {
+    @ManyToOne
+    @JoinColumn(name="fkey_dept")
+    Department department;
+
+
+
+    public Employee(String userId, String firstName, String lastName, Department department) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;

@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/styles.css}">
 </head>
 <body>
     <table>
+        <tr> 
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>department</th>
+        </tr>
         <tr th:each="emp:${employees}"> 
             <td th:text="${emp.userId}"></td>
             <td th:text="${emp.firstName}"></td>
             <td th:text="${emp.lastName}"></td>
-            <td th:text="${emp.department}"></td>
+            <td th:text="${emp.department.name}"></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr> 
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        <tr th:each="department:${departments}"> 
+            <td th:text="${department.id}"></td>
+            <td th:text="${department.name}"></td>
         </tr>
     </table>
 </body>
