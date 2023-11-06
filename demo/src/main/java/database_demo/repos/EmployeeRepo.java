@@ -10,5 +10,6 @@ import database_demo.model.Employee;
 public interface EmployeeRepo extends CrudRepository<Employee,Integer>{
 
     public List<Employee> findAll();
-    
+
+    public List<Employee> findByLastName();
 }
