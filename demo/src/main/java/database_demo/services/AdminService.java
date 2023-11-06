@@ -19,19 +19,19 @@ public class AdminService {
         this.employeeRepo = employeeRepo;
         this.departmentRepo = departmentRepo;
 
-        Department admin = new Department("admin");
-        Department sales = new Department("sales");
-        Department orders = new Department("orders");
-        Department repairs = new Department("repairs");
+        // Department admin = new Department("admin");
+        // Department sales = new Department("sales");
+        // Department orders = new Department("orders");
+        // Department repairs = new Department("repairs");
 
-        departmentRepo.save(admin);
-        departmentRepo.save(sales);
-        departmentRepo.save(orders);
-        departmentRepo.save(repairs);
+        // departmentRepo.save(admin);
+        // departmentRepo.save(sales);
+        // departmentRepo.save(orders);
+        // departmentRepo.save(repairs);
 
-        employeeRepo.save(new Employee("abbie","Abbie","Miller",admin));
-        employeeRepo.save(new Employee("sam","Sam","Miller",sales));
-        employeeRepo.save(new Employee("olivia","Olivia","Miller",orders));
+        // employeeRepo.save(new Employee("abbie","Abbie","Miller",admin));
+        // employeeRepo.save(new Employee("sam","Sam","Miller",sales));
+        // employeeRepo.save(new Employee("olivia","Olivia","Miller",orders));
     }
 
     public List<Employee> findAllEmployees()
