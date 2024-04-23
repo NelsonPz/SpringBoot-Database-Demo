@@ -12,18 +12,19 @@ This project is a simple demonstration of a Spring Boot application with databas
 ## Project Structure
 database_demo/
 ├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── database_demo/
-│ │ │ │ ├── controllers/ # Contains controllers for handling HTTP requests
-│ │ │ │ ├── model/ # Contains entity classes
-│ │ │ │ ├── repos/ # Contains repository interfaces
-│ │ │ │ ├── services/ # Contains service classes
-│ │ │ ├── DemoApplication.java # Main class to bootstrap the Spring Boot application
-│ │ └── resources/
-│ │ └── application.properties # Configuration file for Spring Boot application
-├── pom.xml # Maven project configuration file
-└── README.md # Project documentation (you are here)
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── database_demo/
+│   │   │   │   ├── controllers/        # Contains controllers for handling HTTP requests
+│   │   │   │   ├── model/              # Contains entity classes
+│   │   │   │   ├── repos/              # Contains repository interfaces
+│   │   │   │   ├── services/           # Contains service classes
+│   │   │   ├── DemoApplication.java    # Main class to bootstrap the Spring Boot application
+│   │   └── resources/
+│   │       └── application.properties  # Configuration file for Spring Boot application
+├── pom.xml                             # Maven project configuration file
+└── README.md                           # Project documentation (you are here)
+
 
 ## Setup
 1. Clone the repository:
