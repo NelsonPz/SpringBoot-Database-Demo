@@ -1,4 +1,4 @@
-# Database Demo
+# SpringBoot-Database-Demo 
 
 This project is a simple demonstration of a Spring Boot application with database integration. It includes entities for employees and departments, repositories for CRUD operations, services for business logic, and controllers for handling HTTP requests.
 
@@ -28,7 +28,7 @@ database_demo/
 
 ## Setup
 1. Clone the repository:
-  git clone https://github.com/yourusername/database_demo.git
+  git clone https://github.com/yourusername/SpringBoot-Database-Demo.git
 2. Navigate to the project directory:
   cd database_demo
 3. Build the project using Maven:
