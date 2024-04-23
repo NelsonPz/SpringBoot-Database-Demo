@@ -41,3 +41,4 @@ database_demo/
 - After running the application, you can access the API endpoints using your preferred HTTP client (e.g., Postman).
 - The H2 in-memory database console is available at [http://localhost:8080/h2-console](http://localhost:8080/h2-console). Use the JDBC URL `jdbc:h2:mem:testdb` to connect.
 
+**Author**: Nelson Perez
